@@ -12,7 +12,7 @@ Institution: **Will be added after end of reviewing period.**
 + The code to reproduce all experiments (with figures) from the paper, including the following:
   + 5 experiments on inter and intra class distances for different datasets and norms
   + 5 experiments on perturbation cost trajectories for different models and datasets
-  + 6 experiments on robustness curves for different models and datasets
+  + 7 experiments on robustness curves for different models and datasets
   + 1 visualization of adversarial examples for different models and norms
   
 ## Main idea of the paper
