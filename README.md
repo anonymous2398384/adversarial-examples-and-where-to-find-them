@@ -17,7 +17,23 @@ Institution: **Will be added after end of reviewing period.**
   
 ## Main idea of the paper
 <p align="center"><img src="images/readme_gif.gif" width="500"></p>
-Adversarial robustness of trained models has attracted considerable attention over recent years, within and beyond the scientific community. This is not only because of a straight-forward desire to deploy reliable systems, but also because of how adversarial attacks challenge our beliefs about deep neural networks. How can a model with good generalization performance be fooled so easily by an out-of-distribution input? Demanding more robust models seems obvious, but to be able to do this properly, we need to deepen our understanding of how one should judge adversarial robustness as a property of a given model. In this work, we analyze where adversarial examples occur, in which ways they are peculiar, and how they are processed by robustified models. This allows us to provide certain recommendations for anyone looking to train a robust model or to estimate how much robustness they should require for their operation.
+Adversarial robustness of trained models has attracted considerable attention
+over recent years, within and beyond the scientific community. This is not only
+because of a straight-forward desire to deploy reliable systems, but also
+because of how adversarial attacks challenge our beliefs about deep neural
+networks. Demanding more robust models seems to be the obvious solution --
+however, this requires a rigorous understanding of how one should judge
+adversarial robustness as a property of a given model. In this work, we analyze
+where adversarial examples occur, in which ways they are peculiar, and how they
+are processed by robust models. We use robustness curves to show that
+l_infty threat models are surprisingly effective in improving robustness
+for other l_p norms; we introduce perturbation cost trajectories to provide
+a broad perspective on how robust and non-robust networks perceive adversarial
+perturbations as opposed to random perturbations; and we explicitly examine the
+scale of certain common data sets, showing that robustness thresholds must be
+adapted to the data set they pertain to. This allows us to provide concrete
+recommendations for anyone looking to train a robust model or to estimate how
+much robustness they should require for their operation.
 
 ## How to generate robustness curves
 The python script `generate_robustness_curves.py` contains methods to calculate robustness curves. You can either directly execute the script or import the methods from the file. If you directly execute the script, you can define parameters via arguments. Example of usage (estimated runtime: 4 Minutes):
